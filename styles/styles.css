@@ -1,4 +1,15 @@
 /*Estilos para la pagina web NextUp*/
+
+* {
+    margin:0;
+  }
+  
+  #wrapper{
+      width:100%;
+      height:100%;
+      position:relative;
+  }
+
 /*** navbar ****/
 .navbar {
     top:0;
@@ -7,7 +18,12 @@
 
 @font-face {
     font-family:"Pixel";
-    src: url('../fonts/TrueType/SFPixelate-Bold.ttf');
+    src: url('../fonts/SFPixelate-Bold.ttf');
+}
+
+@font-face {
+    font-family:"Titles";
+    src: url('../fonts/SF\ Atarian\ System\ Bold.ttf');
 }
 
 .jumbotron {
@@ -29,15 +45,27 @@
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
-.card-title {
-    font-weight: bold;
-}
-@media screen and (min-width: 400) {
-    .model  {
-        width:"360" ;
-    }
+.carousel-item img {
+    height: auto;
+    bottom: 0;
+    margin-bottom: -12%;
 }
 
+@media screen and (max-width: 600px) {
+        .titulo {
+            font-size:1em;
+        }
+    }
+
+.titulo {
+    font-family: 'Pixel';
+    text-align:center;
+}
+
+.card-title {
+    font-weight: bold;   
+    font-family: "Titulos"; 
+}
 
 footer ul {
     list-style-type: none;

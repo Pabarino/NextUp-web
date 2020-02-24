@@ -1,7 +1,7 @@
 /****** Mis javascripts para Bootstrap *******/
-$(document).ready(function(){
+$(document).ready(function smoothScroll(){
   // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+  $("a").not(".noscroll").on('click', function(event) {
 
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
