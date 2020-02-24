@@ -24,6 +24,13 @@ $(document).ready(function smoothScroll(){
   });
 });
 
+$(".navbar-nav li a").click(function (event) {
+  var toggle = $(".navbar-collapse").hasClass("show");
+  if (toggle) {
+    $(".navbar-toggler").click();
+  }
+});
+
 function comprobarClave(){
     clave1 = document.f1.clave1.value
     clave2 = document.f1.clave2.value
