@@ -51,15 +51,16 @@
     margin-bottom: -12%;
 }
 
-@media screen and (max-width: 600px) {
-        .titulo {
-            font-size:1em;
-        }
-    }
-
 .titulo {
     font-family: 'Pixel';
     text-align:center;
+    font-size:52.5px;
+}
+
+@media screen and (max-width: 480px) {
+    .titulo {
+        font-size:40px;
+    }    
 }
 
 .card-title {
