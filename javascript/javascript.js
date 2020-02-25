@@ -24,6 +24,7 @@ $(document).ready(function smoothScroll(){
   });
 });
 
+/* Este script hace que la pagina web no haga scroll cuando se use el carousel*/
 $(".navbar-nav li a").click(function (event) {
   var toggle = $(".navbar-collapse").hasClass("show");
   if (toggle) {
@@ -31,6 +32,7 @@ $(".navbar-nav li a").click(function (event) {
   }
 });
 
+/*Este script hace que se comparen las contraseñas antes de submitir los valores introducidos en el formulario*/
 function comprobarClave(){
     clave1 = document.f1.clave1.value
     clave2 = document.f1.clave2.value
