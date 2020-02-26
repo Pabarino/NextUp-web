@@ -25,7 +25,7 @@ $(document).ready(function smoothScroll(){
 });
 
 /* Este script hace que la pagina web no haga scroll cuando se use el carousel*/
-$(".navbar-nav li a").click(function (event) {
+$(".navbar-nav li a").click(function NoHagaScroll(event) {
   var toggle = $(".navbar-collapse").hasClass("show");
   if (toggle) {
     $(".navbar-toggler").click();
@@ -45,3 +45,30 @@ function comprobarClave(){
       document.f1.submit(); 
     }
 }
+
+/*CODIGO PARA BUSCAR DENTRO DE LA WEB PALABRAS EN EL BUSCADOR*/
+/*
+$(document).ready(function(){
+  $('#search').keyup(function(){
+  
+   // Search text
+   var text = $(this).val();
+  
+   // Hide all content class element
+   $('.card').hide();
+   $('.carousel').hide();
+   $('.jumbotron').hide();
+  
+ 
+   // Search 
+   $('.card .card-title:contains("'+text+'")').closest('.card').show();
+  
+  });
+ });
+ 
+ $.expr[":"].contains = $.expr.createPseudo(function(arg) {
+   return function( elem ) {
+    return $(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0;
+   };
+ });
+ */
